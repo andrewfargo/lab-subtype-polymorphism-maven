@@ -83,7 +83,7 @@ public class Blocks {
     AsciiBlock ohs = new Rectangle('O', 4, 2);
 
     separator(pen);
-    AsciiBlock.print(pen, new HorizontalCompositionTop(exes, ohs));
+    AsciiBlock.print(pen, new HorizontalCompositionTop(exes, b7));
     separator(pen);
     AsciiBlock.print(pen, new HorizontalCompositionTop(ohs, exes));
     separator(pen);
