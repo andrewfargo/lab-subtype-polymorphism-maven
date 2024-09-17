@@ -2,6 +2,7 @@ package edu.grinnell.csc207.experiments;
 
 import edu.grinnell.csc207.blocks.AsciiBlock;
 import edu.grinnell.csc207.blocks.Boxed;
+import edu.grinnell.csc207.blocks.Empty;
 // import edu.grinnell.csc207.blocks.HorizontalCompositionCenter;
 // import edu.grinnell.csc207.blocks.HorizontalCompositionTop;
 import edu.grinnell.csc207.blocks.Line;
@@ -54,6 +55,22 @@ public class Blocks {
     pen.printf("b4 = new Boxed(b2)\n\n");
     AsciiBlock b4 = new Boxed(b2);
     AsciiBlock.print(pen, b4);
+
+
+    separator(pen);
+    pen.printf("b7 = new Empty()\n\n");
+    AsciiBlock b7 = new Empty();
+    AsciiBlock.print(pen, b7);
+
+    separator(pen);
+    pen.printf("b8 = new Boxed(b7)\n\n");
+    AsciiBlock b8 = new Boxed(b7);
+    AsciiBlock.print(pen, b8);
+
+    separator(pen);
+    pen.printf("b9 = new Boxed(b8)\n\n");
+    AsciiBlock b9 = new Boxed(b8);
+    AsciiBlock.print(pen, b9);
 
     pen.close();
   } // main(String[])
